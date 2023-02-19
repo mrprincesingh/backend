@@ -10,7 +10,7 @@ app.use(cors({
     origin: "*"
 }))
 app.get("/" , (req , res)=>{
-    res.sendFile("HomePage")
+    res.send("HomePage")
 })
 app.use("/users" , userRouter)
 app.use(authenticate)
